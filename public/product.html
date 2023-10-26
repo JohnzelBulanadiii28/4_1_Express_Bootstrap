@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Product</title>
+
+    <style>
+        .col-pad {
+            padding: 25px;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">E-Commerce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="product.html">Products</a>
+                    </li>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+            </div>
+            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-bs-whatever="@getbootstrap">Add New Product</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Add Product</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="md-3">
+                                    <input type="Product Name" class="form-control" id="floatingInput"
+                                        placeholder="Product Name">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="container">
+                            <div class="input-group form-floating mb-3">
+                                <span class="input-group-text">Description</span>
+                                <textarea class="form-control" aria-label="Description"></textarea>
+                            </div>
+                        </div>
+                        <div class="container input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text">.00</span>
+                        </div>
+                        <div class="container mb-3">
+                            <label for="formFileMultiple" class="form-label">Product Image</label>
+                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-info">Add a product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </span>
+            </button>
+        </div>
+    </nav>
+<div class="container-fluid card-deck row row-cols-1 row-cols-md-3 g-4 mt-3">
+    <div class="col">
+        <div class="card h-100 col-pad">
+            <img src="D:\Users\Johnzel\Desktop\4_1_Express_Bootstrap\Iphone 13.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">IPHONE 13 PRO MAX</h5>
+                <p class="card-text">The iPhone 13 Pro Max smartphone features a 6.7-inch Super Retina XDR ProMotion display, 12MP triple rear cameras with
+                LiDAR scanner, and a 12MP selfie camera with FaceID.
+            </p>
+            <p class="card-text">Color Variant: Gold/Graphite/Green/Sierra Blue/Silver</p>
+            </div>
+            <div class="card-footer">
+                <div class="label position-absolute">Price:
+                    <div class="badge bg-dark text-wrap" style="width: 6rem;">
+                        ₱70,990.00
+                    </div>
+                </div>
+                <div class="grid text-end">
+                    <button type="button" class="btn btn-outline-success">Add to cart</button>
+                    <button type="button" class="btn btn-outline-primary">♥</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 col-pad">
+            <img src="D:\Users\Johnzel\Desktop\4_1_Express_Bootstrap\Iphone 14.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">IPHONE 14 PRO MAX</h5>
+                <p class="card-text">The iPhone 14 Pro Max comes with 6.7-inch OLED display with 120Hz refresh rate and Apple's improved Bionic A16
+                processor. On the back there is a Triple camera setup with 48MP main camera.</p>
+                <p class="card-text">Color Variant: Deep Purple/Gold/Silver/Space Black</p>
+            </div>
+             <div class="card-footer">
+              <div class="label position-absolute">Price:
+              <div class="badge bg-dark text-wrap" style="width: 6rem;">
+                ₱ 74,990.00
+              </div>
+              </div>
+              <div class="grid text-end">
+              <button type="button" class="btn btn-outline-success">Add to cart</button>
+              <button type="button"class="btn btn-outline-primary">♥</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 col-pad">
+            <img src="D:\Users\Johnzel\Desktop\4_1_Express_Bootstrap\Iphone 15.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">IPHONE 15 PRO MAX</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text">Color Variant: Natural Titanium/Blue Titanium/White Titanium/Black Titanium  </p>
+            </div>
+            <div class="card-footer">
+                <div class="label position-absolute">Price:
+                    <div class="badge bg-dark text-wrap" style="width: 6rem;">
+                        ₱ 84,990.00
+                    </div>
+                </div>
+                <div class="grid text-end">
+                    <button type="button" class="btn btn-outline-success">Add to cart</button>
+                    <button type="button" class="btn btn-outline-primary">♥</button>
+                </div>
+        </div>
+    </div>
+</div>
+</body>
+    
+</html>
